@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  gameserver:
+    image: "polyhx/lhgames-gameserver-single"
+    network_mode: "host"
+
+  redis:
+    image: "polyhx/lhgames-ui-single"
+    network_mode: "host"
